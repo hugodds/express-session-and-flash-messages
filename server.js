@@ -3,8 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-
-// const connectionString = 'mongodb+srv://hugodmgs:Little-10@hgocluster.vdijz79.mongodb.net/BASEDEDADOS?retryWrites=true&w=majority&appName=hgocluster';
+''
 mongoose.connect(process.env.CONNECTIONSTRING)
   .then(() => {
     app.emit('pronto'); // Conexão com mongoose só vai existir quando o app.emit emitir esse aviso.
